@@ -1,19 +1,21 @@
 CXX=g++
+CXXFLAGS = -c -Wall -std=c++11
 
 ifeq ($(OS), Windows_NT)
-	RM := del
-	BINARY := main.exe
+	RM:=del
 else
-	RM := rm
-	BINARY := ./main
+	RM:=rm
 endif
 
-all:
-	$(CXX) main.cpp -o main
+all: 
+	$(CXX) $(CXXLAGS) main.cpp -o main.exe
 
+	
 clean:
-	$(RM) *.o *.gch 
+	$(RM) *.o *.gch main.exe
 
 run: all
-	main.exe > out.txt
-	Python main.py < out.txt
+	.\main.exe > out.txt
+	.\main.py > out2.txt
+	Python graph.py < out.txt
+	Python graph.py < out2.txt
