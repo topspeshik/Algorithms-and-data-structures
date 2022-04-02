@@ -8,14 +8,14 @@ else
 endif
 
 all: 
-	$(CXX) $(CXXLAGS) main.cpp -o main.exe
+	$(CXX) $(CXXLAGS) main.cpp -o main
 
 	
 clean:
 	$(RM) *.o *.gch main.exe
 
 run: all
-	.\main.exe > out.txt
-	.\main.py > out2.txt
+	main.exe > out.txt
+	main.py > out2.txt
 	Python graph.py < out.txt
 	Python graph.py < out2.txt
