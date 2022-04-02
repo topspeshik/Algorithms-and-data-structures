@@ -14,7 +14,6 @@ int main()
     out.open("out.txt");
     for (int i = 0; i < n; i++)
     {
-       
         for (int j = 0; j < 3; j++)
         {
             out << M_PI * (double(rand()) / RAND_MAX) - M_PI / 2 << " ";
