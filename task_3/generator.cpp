@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-	cout<< "Write number of sets" << endl;
+    cout<< "Write number of sets" << endl;
     int n;
     cin >> n;
     ofstream out;
