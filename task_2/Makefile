@@ -1,5 +1,5 @@
 CXX=g++
-CXXFLAGS = -c -Wall -std=c++11
+
 
 ifeq ($(OS), Windows_NT)
 	MAIN:= main.exe
@@ -10,7 +10,7 @@ else
 endif
 
 all: 
-	$(CXX) $(CXXLAGS) main.cpp -o main
+	$(CXX)  main.cpp -o main
 
 	
 clean:
