@@ -15,7 +15,7 @@ clean:
 	$(RM) *.o *.gch main.exe
 
 run: all
-	main.exe > out.txt
+	main > out.txt
 	main.py > out2.txt
 	Python graph.py < out.txt
 	Python graph.py < out2.txt
