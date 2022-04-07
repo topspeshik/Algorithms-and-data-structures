@@ -18,6 +18,6 @@ clean:
 
 run: all
 	$(MAIN) > out.txt
-	main.py > out2.txt
+	Python main.py > out2.txt
 	Python graph.py < out.txt
 	Python graph.py < out2.txt
