@@ -1,12 +1,9 @@
 CXX=g++
 
-
+MAIN = ./main
 ifeq ($(OS), Windows_NT)
 	MAIN:= main.exe
 	RM:=del
-else
-	MAIN=: ./main
-	RM:=rm
 endif
 
 all: 
