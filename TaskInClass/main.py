@@ -11,7 +11,9 @@ def odd(value):
   else:
     return '1'
 count = 0
+countLines = 0
 for line in f:
+    countLines +=1
     arr = line.split()
     c = ""
     for i in range(4):
@@ -19,4 +21,4 @@ for line in f:
     if arr[4] != odd(int(c)):
         count +=1
 
-print(count)
+print(count/countLines * 100)
