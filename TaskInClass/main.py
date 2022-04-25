@@ -1,56 +1,22 @@
-import matplotlib.pyplot as plt
-import math
-import time
+f = open('out.txt')
 
-def distance(lat1, lon1, lat2, lon2):
-    r = 6371
-    lat1 = math.radians(lat1)
-    lon1 = math.radians(lon1)
-    lat2 = math.radians(lat2)
-    lon2 = math.radians(lon2)
-    a = (math.sin((lat2-lat1)/2)**2 +
-        math.cos(lat1) * math.cos(lat2) *
-        math.sin((lon2-lon1)/2 ) ** 2)
-    d = 2 * r * math.asin(a**0.5)
-    return d
+def odd(value):
+  sum = 0
+  value = int(value)
+  while value > 0:
+      sum += value % 10
+      value //= 10
+  if sum % 2 == 0:
+    return '0'
+  else:
+    return '1'
+count = 0
+for line in f:
+    arr = line.split()
+    c = ""
+    for i in range(4):
+        c = c + bin(int(arr[i]))[2:]
+    if arr[4] != odd(int(c)):
+        count +=1
 
-def thin_grid(points, min_distance = 1000):
-    result = []
-    p = points.pop()
-    result.append(p)
-    while points:
-        p2 = points.pop()
-        for p1 in result:
-            if distance(*p1[:2], *p2[:2]) < min_distance:
-                break
-        else:
-            result.append(p2)
-
-    return result
-
-def get_roi(lats, lons, vals, roi):
-    result = []
-    for lat, lon, val in zip(lats, lons, vals):
-        if roi[0] < lon < roi[1] and roi[2] < lat < roi[3]:
-            result.append([lat, lon, val])
-    return result
-
-def query(date: str, roi: tuple[float], min_distance: int=1000):
-    with open(date, "r") as f:
-        lats = []
-        lons = []
-        vals = []
-        for line in f.readlines()[1:]:
-            lat, lon, val = list(map(float, line.split()))
-            lats.append(lat)
-            lons.append(lon)
-            vals.append(val)
-        roi = get_roi(lats, lons, vals, roi)
-        result = thin_grid(roi, min_distance)
-        return result
-t = time.perf_counter()
-
-result = query("2020-01-01.dat", (-100.0, -80.0, 28.0, 45.0))
-
-print(time.perf_counter()-t)
-print(distance(0,0,0,180))
+print(count)
