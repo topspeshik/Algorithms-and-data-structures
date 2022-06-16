@@ -16,7 +16,7 @@ int main()
     {
         for (int j = 0; j < 3; j++)
         {
-            out << M_PI * (double(rand()) / RAND_MAX) - M_PI / 2 << " ";
+            out << 2 * M_PI * (double(rand()) / RAND_MAX) - M_PI  << " ";
         }
         out << endl;
     }
