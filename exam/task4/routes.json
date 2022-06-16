@@ -1,0 +1,237 @@
+[
+    {
+        "from": "SGND",
+        "to": "GOD",
+        "duration": 4
+    },
+    {
+        "from": "SGND",
+        "to": "BNI",
+        "duration": 10
+    },
+    {
+        "from": "SGND",
+        "to": "BKJ",
+        "duration": 5
+    },
+    {
+        "from": "SGND",
+        "to": "DG",
+        "duration": 4
+    },
+    {
+        "from": "SGND",
+        "to": "SCC",
+        "duration": 8
+    },
+    {
+        "from": "SGND",
+        "to": "MRT",
+        "duration": 8
+    },
+    {
+        "from": "SGND",
+        "to": "VDL",
+        "duration": 5
+    },
+    {
+        "from": "SGND",
+        "to": "AKN",
+        "duration": 7
+    },
+    {
+        "from": "GOD",
+        "to": "BNI",
+        "duration": 9
+    },
+    {
+        "from": "GOD",
+        "to": "BKJ",
+        "duration": 4
+    },
+    {
+        "from": "GOD",
+        "to": "DG",
+        "duration": 1
+    },
+    {
+        "from": "GOD",
+        "to": "GAW",
+        "duration": 6
+    },
+    {
+        "from": "GOD",
+        "to": "KQT",
+        "duration": 4
+    },
+    {
+        "from": "GOD",
+        "to": "TXD",
+        "duration": 6
+    },
+    {
+        "from": "GOD",
+        "to": "AZP",
+        "duration": 10
+    },
+    {
+        "from": "GOD",
+        "to": "MRT",
+        "duration": 7
+    },
+    {
+        "from": "GOD",
+        "to": "NUA",
+        "duration": 3
+    },
+    {
+        "from": "GOD",
+        "to": "CLF",
+        "duration": 8
+    },
+    {
+        "from": "GOD",
+        "to": "PP",
+        "duration": 7
+    },
+    {
+        "from": "BNI",
+        "to": "BKJ",
+        "duration": 5
+    },
+    {
+        "from": "BNI",
+        "to": "DG",
+        "duration": 5
+    },
+    {
+        "from": "BNI",
+        "to": "GAW",
+        "duration": 7
+    },
+    {
+        "from": "BNI",
+        "to": "SCC",
+        "duration": 2
+    },
+    {
+        "from": "BNI",
+        "to": "KQT",
+        "duration": 3
+    },
+    {
+        "from": "BNI",
+        "to": "TXD",
+        "duration": 3
+    },
+    {
+        "from": "BNI",
+        "to": "BMGM",
+        "duration": 5
+    },
+    {
+        "from": "BKJ",
+        "to": "DG",
+        "duration": 5
+    },
+    {
+        "from": "BKJ",
+        "to": "GAW",
+        "duration": 2
+    },
+    {
+        "from": "BKJ",
+        "to": "KQT",
+        "duration": 6
+    },
+    {
+        "from": "BKJ",
+        "to": "ANR",
+        "duration": 3
+    },
+    {
+        "from": "DG",
+        "to": "AZP",
+        "duration": 9
+    },
+    {
+        "from": "DG",
+        "to": "PKO",
+        "duration": 5
+    },
+    {
+        "from": "DG",
+        "to": "RAJR",
+        "duration": 6
+    },
+    {
+        "from": "DG",
+        "to": "GOVR",
+        "duration": 10
+    },
+    {
+        "from": "DG",
+        "to": "MMB",
+        "duration": 10
+    },
+    {
+        "from": "GAW",
+        "to": "CDA",
+        "duration": 5
+    },
+    {
+        "from": "GAW",
+        "to": "KKP",
+        "duration": 10
+    },
+    {
+        "from": "GAW",
+        "to": "CLAT",
+        "duration": 1
+    },
+    {
+        "from": "GAW",
+        "to": "WRR",
+        "duration": 8
+    },
+    {
+        "from": "GAW",
+        "to": "KQT",
+        "duration": 8
+    },
+    {
+        "from": "GAW",
+        "to": "TXD",
+        "duration": 10
+    },
+    {
+        "from": "SCC",
+        "to": "KQT",
+        "duration": 6
+    },
+    {
+        "from": "KQT",
+        "to": "BCO",
+        "duration": 4
+    },
+    {
+        "from": "TXD",
+        "to": "MRT",
+        "duration": 4
+    },
+    {
+        "from": "TXD",
+        "to": "GUD",
+        "duration": 7
+    },
+    {
+        "from": "TXD",
+        "to": "AAS",
+        "duration": 2
+    },
+    {
+        "from": "TXD",
+        "to": "RJPB",
+        "duration": 1
+    }
+]
